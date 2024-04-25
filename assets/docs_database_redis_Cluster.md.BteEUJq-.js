@@ -1,0 +1,7 @@
+import{_ as e,c as a,o as s,a2 as t}from"./chunks/framework.Ii5gFk8W.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/database/redis/Cluster.md","filePath":"docs/database/redis/Cluster.md"}'),n={name:"docs/database/redis/Cluster.md"},l=t(`<h2 id="cluster" tabindex="-1">Cluster <a class="header-anchor" href="#cluster" aria-label="Permalink to &quot;Cluster&quot;">​</a></h2><h3 id="create-relate-cmd" tabindex="-1">create relate cmd <a class="header-anchor" href="#create-relate-cmd" aria-label="Permalink to &quot;create relate cmd&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>redis-cli -h &lt;&gt; -p &lt;&gt; --cluster create node1 node2 node3 ...</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>redis-cli --cluster check</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>redis-cli --cluster add-node &lt;new-node-ip:port&gt; &lt;existing-node-ip:port&gt;  &lt;--cluster-slave&gt;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>redis-cli --cluster reshard &lt;existing-node-ip:port&gt;</span></span></code></pre></div>`,3),r=[l];function c(i,p,d,o,u,_){return s(),a("div",null,r)}const g=e(n,[["render",c]]);export{m as __pageData,g as default};
