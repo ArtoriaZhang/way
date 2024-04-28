@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t}from"./chunks/framework.Ii5gFk8W.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/mq/kafka/index.md","filePath":"docs/mq/kafka/index.md"}'),o={name:"docs/mq/kafka/index.md"};function n(s,c,r,d,i,m){return t(),a("div")}const _=e(o,[["render",n]]);export{p as __pageData,_ as default};
