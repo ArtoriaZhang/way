@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./chunks/framework.CCoplHXX.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/docker/index.md","filePath":"docs/docker/index.md"}'),c={name:"docs/docker/index.md"};function r(a,d,n,s,i,p){return o(),t("div")}const f=e(c,[["render",r]]);export{m as __pageData,f as default};
