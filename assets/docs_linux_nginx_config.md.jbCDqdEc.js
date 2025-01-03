@@ -1,0 +1,29 @@
+import{_ as s,c as a,o as i,a2 as n}from"./chunks/framework.CCoplHXX.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/linux/nginx/config.md","filePath":"docs/linux/nginx/config.md"}'),e={name:"docs/linux/nginx/config.md"},t=n(`<h2 id="location-matcher" tabindex="-1">location matcher <a class="header-anchor" href="#location-matcher" aria-label="Permalink to &quot;location matcher&quot;">​</a></h2><div class="vp-code-group vp-adaptive-theme"><div class="tabs"><input type="radio" name="group-v5tOm" id="tab-9tG5q_A" checked="checked"><label for="tab-9tG5q_A">nginx.conf</label><input type="radio" name="group-v5tOm" id="tab-BIhmFCR"><label for="tab-BIhmFCR">nginx.conf</label></div><div class="blocks"><div class="language-shell vp-adaptive-theme active"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># -----------------------------------------------------------------------------------------</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     ~     : Enable regex mode for location (in regex ~ mean case-sensitive match)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     ~*    : case-insensitive match</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     |     : Or</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     ()    : Match group or evaluate the content of ()</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     $     : the expression must be at the end of the evaluated text </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             (no char/text after the match) $ is usually used at the end of a regex </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             location expression. </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     ?     : Check for zero or one occurrence of the previous char ex jpe?g</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     ^~    : The match must be at the beginning of the text, note that nginx will not perform </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             any further regular expression match even if an other match is available </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             (check the table above); ^ indicate that the match must be at the start of </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             the uri text, while ~ indicates a regular expression match mode.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             example (location ^~ /realestate/.*)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             Nginx evaluation exactly this as don&#39;t check regexp locations if this </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             location is longest prefix match.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     =     : Exact match, no sub folders (location = /)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     ^     : Match the beginning of the text (opposite of $). By itself, ^ is a </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             shortcut for all paths (since they all have a beginning).</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     .*    : Match zero, one or more occurrence of any char</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     \\     : Escape the next char</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     .     : Any char </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     *     : Match zero, one or more occurrence of the previous char</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     !     : Not (negative look ahead)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     {}    : Match a specific number of occurrence ex. [0-9]{3} match 342 but not 32</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#             {2,4} match length of 2, 3 and 4</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     +     : Match one or more occurrence of the previous char </span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">#     []    : Match any char inside</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># ------------------------------------------------------------------------------</span></span></code></pre></div><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">test</span></span></code></pre></div></div></div>`,2),l=[t];function h(p,c,o,r,k,d){return i(),a("div",null,l)}const D=s(e,[["render",h]]);export{A as __pageData,D as default};
